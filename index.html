@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Acadêmica - UNIPLAN</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Calculadora Acadêmica</h1>
+        <p class="subtitle">ADS - UNIPLAN |</p>
+
+        <form id="calcForm">
+            <div class="form-group">
+                <label>Nome do aluno:</label>
+                <input type="text" id="nome" required placeholder="Ex: João Silva">
+            </div>
+
+            <div class="form-group">
+                <label>Disciplina:</label>
+                <input type="text" id="disciplina" required placeholder="Ex: Pensamento Computacional">
+            </div>
+
+            <div class="form-group">
+                <label>Carga horária total: 60h</label>
+                <input type="number" id="faltas" required placeholder="Faltas (horas)" min="0" max="60">
+                <small>Cada aula = 3h. Máximo de faltas para aprovação: 15h (75% de presença)</small>
+            </div>
+
+            <div class="form-group">
+                <label>Nota NP1 (0 a 10):</label>
+                <input type="number" step="any" id="np1" required min="0" max="10" placeholder="0 - 10">
+            </div>
+
+            <div class="form-group">
+                <label>Nota PIM (0 a 10):</label>
+                <input type="number" step="any" id="pim" required min="0" max="10" placeholder="0 - 10">
+            </div>
+
+            <div class="form-group">
+                <label>Nota NP2 (0 a 10):</label>
+                <input type="number" step="any" id="np2" required min="0" max="10" placeholder="0 - 10">
+            </div>
+
+            <button type="submit" class="btn-calcular">Calcular Situação</button>
+            <button type="button" class="btn-limpar" id="limparBtn">Limpar</button>
+        </form>
+
+        <div id="resultado" class="resultado hidden">
+            <h2>📄 Boletim</h2>
+            <div id="boletim"></div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

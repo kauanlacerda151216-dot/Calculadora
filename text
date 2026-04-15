@@ -1,0 +1,20 @@
+pessoa e de ads ,se sim
+Nome, pessoa e chamada pelo nome
+faltas->25% aprovado 26% reprovado total de aulas=60
+notas,=>5 APRO,SE NAO REPRO
+
+#np1 vale 4
+#np2 vale 4 
+#pin vale 2
+#divide por 10
+
+#codigo começa aqui
+print fez a np1
+input -> digite nota np1
+input -> digite nota np2
+print tem pin? se sim 
+se nao np1,np2 /por 2
+input -> digite a nota do pin
+
+calcular media np1,np2,pin
+resultado

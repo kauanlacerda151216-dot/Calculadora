@@ -1,0 +1,171 @@
+:root {
+    --bg-primary: #0a0e17;
+    --bg-secondary: #141a24;
+    --card-bg: #1e2a36;
+    --text-primary: #e0e0e0;
+    --text-secondary: #b0b0b0;
+    --accent: #3b82f6;
+    --accent-hover: #2563eb;
+    --danger: #ef4444;
+    --success: #10b981;
+    --warning: #f59e0b;
+    --border: #2d3a45;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: var(--bg-secondary);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    border: 1px solid var(--border);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    color: var(--accent);
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.75rem;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+input, select {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    color: var(--text-primary);
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px rgba(59,130,246,0.3);
+}
+
+small {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    margin-right: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.btn-calcular {
+    background-color: var(--accent);
+    color: white;
+}
+
+.btn-calcular:hover {
+    background-color: var(--accent-hover);
+}
+
+.btn-limpar {
+    background-color: var(--danger);
+    color: white;
+}
+
+.btn-limpar:hover {
+    background-color: #dc2626;
+}
+
+.resultado {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: var(--card-bg);
+    border-radius: 1rem;
+    border-left: 4px solid var(--accent);
+}
+
+.resultado h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: var(--accent);
+}
+
+.hidden {
+    display: none;
+}
+
+.boletim-linha {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.boletim-linha strong {
+    color: var(--accent);
+}
+
+.situacao-aprovado {
+    color: var(--success);
+    font-weight: bold;
+}
+
+.situacao-reprovado {
+    color: var(--danger);
+    font-weight: bold;
+}
+
+.situacao-pim {
+    color: var(--warning);
+}
+.btn-download {
+    background-color: #10b981;
+    color: white;
+    margin-top: 1rem;
+    width: 100%;
+}
+.btn-download:hover {
+    background-color: #059669;
+}
